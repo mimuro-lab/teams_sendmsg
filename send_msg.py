@@ -40,3 +40,6 @@ wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,'.cke_wysiwyg_div.cke_res
 EleMsgBox = driver.find_element_by_css_selector('.cke_wysiwyg_div.cke_reset.cke_enable_context_menu.cke_editable.cke_editable_themed.cke_contents_ltr.cke_show_borders')
 EleMsgBox.clear()
 EleMsgBox.send_keys(message)
+wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.app-svg.icons-send.icons-rtl-flip')))
+EleSendBtn = driver.find_element_by_css_selector('.app-svg.icons-send.icons-rtl-flip')
+#EleSendBtn.click()
